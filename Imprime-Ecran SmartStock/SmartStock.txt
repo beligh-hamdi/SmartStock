@@ -1,0 +1,28 @@
+Developpement C++: Nokia Qt Creator 2.5.0
+Design: Photoshop CS5
+
+Projet: Qt Gui Application
+Application Build: Qt 4.8.1 for Desktop MSVC2010 (Windows)
+
+--------------------------------------------------------------------------------------------------
+Base de donneés: SQLite
+Nom de la base : smartstock
+
+Les tables: utilisateur, categorie, produits, stock, historique
+utilisateur(login,password,nom,active,droits,photos)
+	active (0/1) : entier
+	droits(1:utilisateur, 10; adminstrateur) : entier
+        utilisateur: entree/sortie de stock, ajout produit, voir son compte, voir les statistiques
+        adminstrateur: gérer tout (categorie,produits,utilisateurs,stock...)
+
+categorie(categorie,description,photo)
+
+produits(produit,description,prix,categorie,photo,active)
+	active (0/1) : entier
+
+stock(produit,quantite)
+
+historique(produit,quantite,date_histo,flux)
+     flux(IN:entreé, OUT:sortie)
+     historisation de stock
+---------------------------------------------------------------------------------------------------
